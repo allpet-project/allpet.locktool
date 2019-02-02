@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:allpet.locktool"
         mc:Ignorable="d"
-        Title="MainWindow" Height="469.098" Width="990.981" Loaded="Window_Loaded">
+        Title="MainWindow" Height="584.817" Width="990.981" Loaded="Window_Loaded">
     <Grid>
         <Label Content="Allpet lockcontract tool 0.2" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Button Content="Load Nep6 Neo Wallet File(.json) " HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="231" Height="27" Click="Button_Click_2"/>
         <Button Content="Input PublicKey(check only)" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="231" Height="27" Click="Button_Click"/>
-        <GroupBox Header="lock time" HorizontalAlignment="Left" Height="210" Margin="10,196,0,0" VerticalAlignment="Top" Width="308">
+        <GroupBox Header="lock time" HorizontalAlignment="Left" Height="312" Margin="10,196,0,0" VerticalAlignment="Top" Width="308">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="79*"/>
-                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <ListBox x:Name="listDates" Grid.RowSpan="1"/>
                 <Button Content="add a time" Margin="-1,0,0,0" Width="75" Grid.Row="1" HorizontalAlignment="Left" Click="Button_Click_3"/>
@@ -22,7 +22,7 @@
             </Grid>
 
         </GroupBox>
-        <GroupBox Header="PET balance Of Lock account" HorizontalAlignment="Left" Height="210" Margin="341,196,0,0" VerticalAlignment="Top" Width="602">
+        <GroupBox Header="PET balance Of Lock account" HorizontalAlignment="Left" Height="312" Margin="341,196,0,0" VerticalAlignment="Top" Width="602">
 
             <ListBox x:Name="listLocks"></ListBox>
         </GroupBox>

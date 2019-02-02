@@ -173,10 +173,19 @@ namespace allpet.locktool
             }
 
             this.listLocks.Items.Add(outline);
+            var link = new Button();
+            link.Width = 100;
+            link.Height = 20;
+            link.Content = "show in browser";
+            link.Click += (s,e) =>
+              {
+                  System.Diagnostics.Process.Start("https://neotracker.io/address/"+ contractaddr);
+              };
+            this.listLocks.Items.Add(link);
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var str_pubkey = Dialog_Input.ShowDialog(this, "input publickey here.", "035e34432610b9880160837b8843c7ea19ff2f0c8d0e47cc4f4236f26369499b7c");
+            var str_pubkey = Dialog_Input.ShowDialog(this, "input publickey here.");
             if(string.IsNullOrEmpty(str_pubkey))
             {
                 MessageBox.Show("error key set.");
@@ -190,6 +199,8 @@ namespace allpet.locktool
 
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (main_pubkey == null)
+                return;
             UpdateMainInfo();
 
             this.listLocks.Items.Clear();
