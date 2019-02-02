@@ -10,7 +10,7 @@
         <Label Content="Allpet lockcontract tool 0.2" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Button Content="Load Nep6 Neo Wallet File(.json) " HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="231" Height="27" Click="Button_Click_2"/>
         <Button Content="Input PublicKey(check only)" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="231" Height="27" Click="Button_Click"/>
-        <GroupBox Header="lock time" HorizontalAlignment="Left" Height="312" Margin="10,196,0,0" VerticalAlignment="Top" Width="308">
+        <GroupBox Header="lock time" HorizontalAlignment="Left" Height="312" Margin="10,232,0,0" VerticalAlignment="Top" Width="308">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="9*"/>
@@ -22,7 +22,7 @@
             </Grid>
 
         </GroupBox>
-        <GroupBox Header="PET balance Of Lock account" HorizontalAlignment="Left" Height="312" Margin="341,196,0,0" VerticalAlignment="Top" Width="602">
+        <GroupBox Header="PET balance Of Lock account" HorizontalAlignment="Left" Height="312" Margin="341,232,0,0" VerticalAlignment="Top" Width="602">
 
             <ListBox x:Name="listLocks"></ListBox>
         </GroupBox>
@@ -30,6 +30,8 @@
             <ListBox x:Name="listMain"></ListBox>
         </GroupBox>
         <Button Content="Get Balance" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="231" Height="25" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,202,0,0" TextWrapping="Wrap" Text="https://github.com/neo-project/neo-gui/blob/master/neo-gui/UI/CreateLockAccountDialog.cs " VerticalAlignment="Top" Height="25" Width="555"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,182,0,0" TextWrapping="Wrap" Text="lockcontract is a function in NEOGUI.You can find create rule for lockcontract in:                " VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
